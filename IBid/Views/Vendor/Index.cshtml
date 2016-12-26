@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewBag.Title = "CreateVendor";
+}
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<h2>CreateVendor</h2>
+
+<table class="table-striped">
+    <thead>
+        <tr>
+            <th>VendorName</th>
+            <th>Contact person</th>
+            <th>Email</th>
+            <th>mobile</th>
+            <th>description</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+            <td>john@example.com</td>
+            <td>john@example.com</td>
+            <th><a data-toggle="modal" data-target="#myModal">Edit</a></th>
+        </tr>
+        <tr>
+            <td>Mary</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+            <td>john@example.com</td>
+            <td>john@example.com</td>
+            <th><a data-toggle="modal" data-target="#myModal">Edit</a></th>
+        </tr>
+        <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+            <td>john@example.com</td>
+            <td>john@example.com</td>
+            <th><a data-toggle="modal" data-target="#myModal">Edit</a></th>
+        </tr>
+    </tbody>
+</table>
+
+
+<div class="container">    
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                   @Html.Partial("~/Views/Vendor/Partials/CreateVendor.cshtml")
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
